@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
 
 body {
     background-color: black;
     color: white;
+    height: 100vh;
+}
+@media screen and (max-device-width: 500px) {
+    body {
+    background-color: black;
+    color: white;
+    height: 2000px;
+    overflow-y: hidden;
+}
+}
+
+@media screen and (orientation: landscape) {
+body {
+    background-color: black;
+    color: white;
     height: 3000px;
+    overflow-y: scroll;
+}
 }
 
 .topBar {
@@ -209,7 +227,7 @@ body {
 }
 @media screen and (orientation: portrait) {
 body {
-    height: 11000px
+    height: 1000px
 }
 .middleBar {
     position: absolute;
@@ -371,9 +389,9 @@ body {
     position: absolute;
     height: 550px;
     width: 550px;
-    left: 40%;
+    left: 30%;
     transform: translate(-50%);
-    margin: 50px;
+    margin-top: 50px;
     cursor: pointer;
     border-radius: 40px;
 }
@@ -381,9 +399,9 @@ body {
     position: absolute;
     height: 550px;
     width: 550px;
-    left: 40%;
+    left: 30%;
     transform: translate(-50%);
-    margin: 50px;
+    margin-top: 50px;
     top: 650px;
     cursor: pointer;
     border-radius: 40px;
@@ -392,12 +410,44 @@ body {
     position: absolute;
     height: 550px;
     width: 550px;
-    left: 40%;
+    left: 30%;
     transform: translate(-50%);
-    margin: 50px;
+    margin-top: 50px;
     top: 1300px;
     cursor: pointer;
     border-radius: 40px;
+}
+
+@media screen and (max-width: 1210px) {
+    .productImage1 {
+        position: absolute;
+        height: 550px;
+        width: 550px;
+        left: 25%;
+        margin-top: 30px;
+        cursor: pointer;
+        border-radius: 40px;
+    }
+    .productImage2 {
+        position: absolute;
+        height: 550px;
+        width: 550px;
+        left: 25%;
+        margin-top: 50px;
+        top: 650px;
+        cursor: pointer;
+        border-radius: 40px;
+    }
+    .productImage3 {
+        position: absolute;
+        height: 550px;
+        width: 550px;
+        left: 25%;
+        margin-top: 50px;
+        top: 1300px;
+        cursor: pointer;
+        border-radius: 40px;
+    }
 }
 
 .rightProductBar {
@@ -410,11 +460,210 @@ body {
 
 .productTitle {
     position: relative;
-    font-size: 40px;
-    margin: 10px
+    font-size: 45px;
+    margin-top: 10px
 }
 .productPrice {
     position: relative;
-    font-size: 20px;
-    margin: 10px
+    font-size: 25px;
+    margin-top: 30px
+}
+
+.productSmall {
+    left: 0
+}
+.productMedium {
+    left: 20%;
+    background-color: white;
+    color: black;
+}
+.productLarge {
+    left: 40%
+}
+.productXLarge {
+    left: 60%
+}
+
+.productSizes {
+    position: absolute;
+    height: 40px;
+    width: 65px;
+    border: 1px rgb(100, 100, 100) solid;
+    border-radius: 30vh;
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Oswald;
+}
+.productSizes:hover {
+    border: 1px white solid;
+}
+
+.normalText {
+    font-family: Kanit;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 10px
+}
+
+.counterTakeAway {
+    height: 30px;
+    width: 30px;
+    border: 1px rgb(101, 101, 101) solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.counterTakeAway:hover {
+    border: 1px white solid;
+}
+.counterAdd:hover {
+    border: 1px white solid;
+}
+.counterAdd {
+    height: 30px;
+    width: 30px;
+    border: 1px rgb(101, 101, 101) solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#counterNum {
+    height: 30px;
+    width: 200px;
+    border: 1px white solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: text;
+}
+
+.addToCart {
+    margin: auto;
+    width: 400px;
+    height: 50px;
+    border: 2px rgb(125, 125, 125) solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: Kanit;
+    font-weight: bold;
+    cursor: pointer;
+}
+.addToCart:hover {
+    position: relative;
+    border: 4px white solid;
+    top: -2px
+}
+
+.buyNow {
+    margin: auto;
+    width: 400px;
+    height: 50px;
+    border: 2px rgb(45, 45, 45) solid;
+    background-color: rgb(45, 45, 45);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: Kanit;
+    font-weight: bold;
+    cursor: pointer;
+}
+.buyNow:hover {
+    position: relative;
+    border: 4px rgb(45, 45, 45) solid;
+    top: -2px
+}
+
+.imgLeft {
+    display: none
+}
+.imgRight {
+    display: none
+}
+
+@media screen and (orientation: portrait) {
+    .productImage1 {
+        position: absolute;
+        height: 700px;
+        width: 700px;
+        left: 50%;
+        transform: translate(-50%);
+        cursor: pointer;
+        border-radius: 40px;
+    }
+.productImage2 {
+    display: none
+}
+.productImage3 {
+    display: none
+}
+.rightProductBar {
+    position: absolute;
+    height: 80vh;
+    width: 450px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 850px;
+    background-color: transparent;
+}
+.imgLeft {
+    display: block;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border: 1px white solid;
+    border-radius: 20px;
+    left: 40%;
+    transform: translate(-50%);
+    top: 780px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgRight {
+    display: block;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border: 1px white solid;
+    border-radius: 20px;
+    left: 60%;
+    transform: translate(-50%);
+    top: 780px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middleBar {
+    position: absolute;
+    height: 1600px;
+    width: 100%;
+    border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+    top: 10vh;
+}
 }
