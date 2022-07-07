@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.middleBarSC {
+    position: absolute;
+    height: 30vh;
+    width: 100%;
+    top: 20vh;
+}
+
+.bottomBarTopSC {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.bottomBarSC {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    bottom: -500px;
+    border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+    border-top: 1px rgba(255, 255, 255, 0.3) solid;
+    background-color: rgb(0, 0, 0);
+}
+
+.cartText {
+    font-size: 50px;
+    font-family: Bebas Neue;
+    margin: 70px;
+    letter-spacing: 5px;
+}
+.cartButton {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background-color: rgba(70, 70, 70, 0.533);
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.cartButtonText {
+    position: absolute;
+    white-space: nowrap;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+

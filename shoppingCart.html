@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Umbra Clothing</title>
+        <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+        <link rel="stylesheet"  href="CSS/shopingCartCSS.css">
+        <link rel="stylesheet"  href="CSS/mainCSS.css">
+        <link rel="stylesheet"  href="CSS/bothCSS.css">
+    </head>
+    <body>
+        <div class="topBar nav-down" id="topBar">
+            <div class="topBarLeft">
+                <script>
+                    searchBarOpenVal = false
+                    function searchBarOpen() {
+                        document.body.style.overflow = "hidden"
+                        document.body.style.overflowX = "hidden"
+                        searchBarOpenVal = true
+                        document.getElementById("overlaySC").style.backgroundColor = "rgba(255, 255, 255, 0.6)"
+                        document.getElementById("overlaySC").style.height = "80vh"
+                        document.getElementById("topBar").style.display = "none"
+                        document.getElementById("searchBarOverlay").style.display = "block"
+                    }
+                    function searchBarClose() {
+                        document.body.style.overflow = "scroll"
+                        document.body.style.overflowX = "hidden"
+                        searchBarOpenVal = false
+                        document.getElementById("overlaySC").style.backgroundColor = "transparent"
+                        document.getElementById("overlaySC").style.height = "0"
+                        document.getElementById("topBar").style.display = "block"
+                        document.getElementById("searchBarOverlay").style.display = "none"
+                    }
+                </script>
+                <a onclick="searchBarOpen()">
+                <svg class="searchIcon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg></a>
+                <img class="topBarLeftText" src="images/umbraText.png">
+            </div>
+            <div class="topBarMiddle">
+                <a href="index.html">
+                    <img class="logo" src="https://cdn.discordapp.com/attachments/993149283308146820/993585644708306944/IMG_3835.gif">
+                </a>
+            </div>
+            <div class="topBarRight">
+                <a href="shoppingCart.html">
+                    <svg class="shoppingCartIcon" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+                        <path d="m15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33l-.78-11.61zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1 -9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z" fill="currentColor" fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <img class="topBarRightText" src="images/clothingText.png">
+            </div>
+            
+        </div>
+        <div id="searchBarOverlay">
+            <input class="searchBar" placeholder="Search">
+            <a onclick="searchBarClose()">
+            <img class="searchBarButton" src="images/X.png">
+            </a>
+        </div>
+        <div class="middleBarSC">
+            <div class="cartText">ADD AN ITEM TO YOUR CART</div>
+            <a href="main.html">
+                <div class="cartButton"><div class="cartButtonText">CONTINUE SHOPPING</div></div>
+            </a>
+        <div class="bottomBarSC">
+            <div class="bottomBarTopSC">
+                <div class="bottomBarTopText">Info</div>
+                <div class="bottomBarTopText">random text you want me to put here...</div>
+            </div>
+                <div class="bottomBarBottom">
+                </div>
+            </div>
+        </div>
+        <div id="overlaySC">
+
+        </div>
+    </body>
+</html>
